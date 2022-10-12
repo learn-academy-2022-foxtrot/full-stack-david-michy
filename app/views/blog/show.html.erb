@@ -1,6 +1,9 @@
 <h3><%= @blog.title %></h3>
   <br/>
-<p> About this blog: 
- <%= @blog.content %></p>
+  <ul>
+    <li>
+      <%= @blog.content %>
+    </li>
+  </ul>
   <br/>
 <p><%= link_to 'Back to Home', blogs_path %></p>
