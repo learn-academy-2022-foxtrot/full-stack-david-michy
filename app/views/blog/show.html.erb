@@ -7,3 +7,7 @@
   </ul>
   <br/>
 <p><%= link_to 'Back to Home', blogs_path %></p>
+<%= link_to "Delete post", blog_path(@blog), data: {
+                  'turbo_method': :delete,
+                  'turbo_confirm': "Are you sure?"
+                } %>
